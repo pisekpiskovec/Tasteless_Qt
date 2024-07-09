@@ -108,6 +108,7 @@ Color</string>
     </property>
     <addaction name="action_Average_Color"/>
     <addaction name="actionColor_Inverter"/>
+    <addaction name="action_Mix_Color"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -137,6 +138,14 @@ Color</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Mix_Color">
+   <property name="text">
+    <string>&amp;Mix Color</string>
+   </property>
+   <property name="shortcut">
+    <string>M</string>
    </property>
   </action>
  </widget>
@@ -186,6 +195,22 @@ Color</string>
     </hint>
     <hint type="destinationlabel">
      <x>139</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Mix_Color</sender>
+   <signal>triggered()</signal>
+   <receiver>pbMixColor</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
      <y>82</y>
     </hint>
    </hints>

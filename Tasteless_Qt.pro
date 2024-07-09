@@ -10,7 +10,6 @@ CONFIG += c++17
 
 SOURCES += \
     averagecolor.cpp \
-    commoncolorlib.cpp \
     invertcolor.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -18,7 +17,6 @@ SOURCES += \
 
 HEADERS += \
     averagecolor.h \
-    commoncolorlib.h \
     invertcolor.h \
     mainwindow.h \
     mixcolor.h

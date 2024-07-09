@@ -2,7 +2,6 @@
 #define MIXCOLOR_H
 
 #include <QDialog>
-#include <commoncolorlib.h>
 
 namespace Ui {
 class MixColor;
@@ -26,7 +25,7 @@ private slots:
     void on_sbRight_valueChanged(int arg1);
 
 private:
-    Ui::MixColor *ui; commonColorLib ccl;
+    Ui::MixColor *ui;
     int maxRGB;
     double avrR, avrG, avrB;
     int clr1R, clr1G, clr1B;
